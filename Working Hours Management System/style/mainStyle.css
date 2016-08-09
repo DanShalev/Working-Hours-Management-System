@@ -1,0 +1,337 @@
+@CHARSET "UTF-8";
+body {
+	background-color:#fcfafa; /*BODY BACKGROUND COLOR*/
+}
+
+a:hover {
+	text-decoration: none;
+}
+/********************TABLE & MENUS CSS***********************************/
+#layout-table {
+	direction: rtl;
+    margin: 15px;
+    margin-left: 0px;
+    border: none;
+    border: 0px solid green;
+    background-color:#fcfafa; /*TABLE BACKGROUND COLOR*/
+}
+
+/**1. TOPROW*/
+#tr_top_row {
+	height: 103px;
+}
+
+#user_info-top-left { /*DIV-> Username | Exit*/
+    width: 100%;
+    vertical-align:bottom;
+    text-align:left;
+    padding-bottom: 15px;
+    padding-left: 45px;
+}
+
+/**2. SECOND ROW*/
+#tr_second_row {
+	height: 41px;
+}
+
+#ul_upper_tabs {
+    padding-right: 0px;
+    position: relative;
+    right: -3px;
+}
+
+/**3. 3RD ROW*/
+#td_content_box {
+    vertical-align: top;
+    border-right: 1px solid #dddddd;
+    background-color:white; /*CONTENT BOX BACKGROUND COLOR*/
+}
+
+#main_content_box {
+    direction: rtl;
+    margin: 23px;
+    margin-top: 15px;
+}
+
+#td_side_menu {
+    vertical-align: top;
+}
+
+#side_menu {
+    position:relative;
+    top: -1px;
+    left:-1px;
+}
+
+/***********************CONTENT BOX***************************/
+/**1. GENERAL*/
+li.list-group-item {
+	background-color:#fcfafa; /*LI BACKGROUND COLOR*/
+}
+
+#h2_heading { /*LI HEADING*/
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+ 
+.span_small-heading {
+	position:relative;
+	right: -4px;
+	font-size: 1.3em;
+	font-weight:bold;
+	margin-bottom: 5px;
+}
+
+.form_lables {
+	width:112px;
+}
+
+.popover_link {
+	color:#333333;
+}
+.popover_link:hover {
+	text-decoration:none;
+}
+
+.ul_content_box {
+	margin: 8px;
+	margin-bottom: 20px;
+	width: 500px;
+	padding-right: 0px;
+}
+/*1.1 GENERAL: FORM VALIDATE*/
+#error_msg_form {
+	color: #dd4b39;
+	direction:RTL;
+	padding-top: 8px;
+	font-size: 1.2em;
+}
+
+.error_icon {
+    width: 15px;
+    height: 15px;
+}
+.optional_form {
+	font-weight: normal;
+	font-size: 13px;
+}
+
+/**2. ADMIN: MANAGE_USER*/
+/**2.1 MANAGE_USER*/
+#ul_edit_user {
+	margin: 8px;
+	margin-bottom: 20px;
+	width: 500px;
+	padding-right: 0px;
+}
+
+.div_search_button {
+	margin:5px;
+	margin-top:10px;
+	text-align: left;
+}
+.search_button {
+	width: 80px;
+}
+
+#to_add_form_button {
+	width: 80px;
+}
+
+/*2.2 SEARCH RESULTS*/
+#search_table, #monthly-report_table, #hourly-report_table {
+	margin-top: 5px;
+	background-color: white; /*SEARCH TABLE BACKGROUND COLOR*/
+}
+#search_table tbody td, #monthly-report_table tbody td,
+#hourly-report_table tbody td,
+#monthly_table tbody td, #hourly_table tbody td {
+    cursor: pointer;
+}
+
+.search_heading {
+	font-size: 1.1em;	
+	margin-bottom: 5px;
+	color: #8a6d3b;
+}
+/*2.3 ADD USERS*/
+.ul_list-group_add_user {
+	margin: 8px;
+	padding-right: 0px;
+	width: 480px;
+}
+.div_fh_margin {
+	margin-top: 5px;
+}
+.li_padding {
+	padding-top: 5px;
+}
+.inline_box {
+	display: inline; margin-right: 22px;
+}
+#s0, #s1, #s2 { /*salary form*/
+	display: inline;
+}
+#s1 {
+	width: 115px;
+}
+#s2 {
+	width: 210px;
+}
+.help-block_style { /*FOR JS VALIDATE ERROR MSG*/
+	margin-right: 120px;
+	color: #a94442;
+}
+
+#email::-webkit-input-placeholder { text-align: right; }
+
+#generate_pass {
+	width: 80px;
+	position: relative;
+	top: -2px;
+}
+
+.help_block_msg {
+	 padding-right: 136px; 
+	 padding-left: 8px; 
+	 margin-bottom: 0px;
+}
+
+#more-less_roles {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/**3. ADMIN: ACCOUNT_SETTINGS*/
+#ul_account_set {
+	margin: 8px;
+	margin-bottom: 20px;
+	padding-right: 0px;
+	width: 480px; /*WIDTH EQUAL TO #ul_add_user*/
+}
+
+#acc_set_info {
+	margin-top: 3px;
+	font-size: 15px;
+	line-height:140%;
+}
+
+.change_pass_button {
+	width: 70px;
+}
+ /**4. ADMIN: MANAGE-ROLES*/
+ #available_capacity_msg {
+ 	color: green; 
+ 	width: 150px;
+ }
+ 
+ .capacity_search_header {
+ 	font-style:italic;
+ }
+
+#capacity_search_right_border {
+ 	border-right: 2px solid #dddddd;
+ }
+/**5. ADMIN: MANAGE-OFFICES*/
+ #office_manager_msg {
+ 	width: 150px;
+ }
+.manager_link:hover {
+	text-decoration:none;
+}
+/**6. ADMIN: ACTION-MSG*/
+.action_msg {
+	margin: 5px; 
+	margin-bottom: 0px;
+}
+
+
+
+/*7. PERSONAL ZONE*/
+.label-success, .label-danger,
+.label-default, .label-warning {
+	font-size: 14px;
+	cursor: default;
+}
+
+.unconfirmed_label {
+	background-color: #999999;
+	font-size: 14px;
+}
+
+/*7.1 MONTHLY REPORT*/
+.hours_msg { 
+	padding-right: 133px;
+	font-weight: bold;
+}
+
+#monthly_month_picker { /*MONTH NAME COLOR*/
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #333333/*3e86c3*/;
+}
+#monthly_month_picker_div { /*CHEVRON COLORS*/
+	display:inline;
+	color: #333333;
+	float: left;
+	cursor: default;
+}
+#move_right, #move_left {
+	cursor: pointer;
+}
+#move_right.disabled_month,
+#move_left.disabled_month {
+    color: #dddddd;
+    cursor: default;
+}
+
+#role_report_hours {
+ 	color: #737373; 
+ 	width: 250px;
+ }
+ 
+ /*7.2 MONTHLY-HISTORY*/
+ 
+/*7.3 PRINT REPORTS*/
+.radio_div, .radio_input { /*RADIO INPUT CLASS DOES NOT WORK, BOOTSTRAP OVERRIDE*/
+  	float: right;
+  	white-space: nowrap;
+}
+
+.radio_label_span {
+	padding-right: 20px;
+}
+
+.radio-form-style {
+	width: 85px;
+}
+
+.table_header_pr {
+	font-size: 1.3em;
+	font-weight:bold;
+}
+
+.print_logo {
+	width: 120px;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+/*7.4 ADMIN PANEL*/
+#confirm_all-monthly, #confirm_all-hourly {
+	float:left;
+	padding-left: 10px;
+	padding-bottom: 7px;
+}
+
+#officename_td:hover,
+#officename2_td:hover {
+	background-color: white;
+}
+
+/*MANAGE-HISOTORY PRESIDENT PANEL*/
+#hours-report_td_header:hover {
+	background-color: white;
+}

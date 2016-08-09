@@ -1,0 +1,305 @@
+.content-calendar {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-right: 250px;
+}
+
+/*1.CALENDAR TABLE STYLE*/
+.calendar_table table {
+    font-family: "Tahoma";
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    border-spacing: 0px;
+    border-collapse: separate !important;
+    box-shadow: 0 4px 4px #CCCCCC;
+}
+
+div.content-calendar table:first-child { /*DISABLE SELECT*/
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+/*1.1 BORDER RADIUS*/
+thead td:first-child { /*TOP RIGHT CORNER*/
+	border-radius: 0 6px 0 0;
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+}
+thead td:last-child { /*TOP LEFT CORNER*/
+	border-radius: 6px 0 0 0;
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+}
+
+.calendar_table tbody tr:last-child td:first-child { /*BOTTOM RIGHT CORNER*/
+    border-radius: 0 0 6px 0;
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+}
+
+.calendar_table tbody tr:last-child td:last-child { /*BOTTOM LEFT CORNER*/
+    border-radius: 0 0 0 6px;
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+}
+
+/*1.2 BORDERS COLOR*/
+.calendar_table .cal_top_border { 
+    border-top: 1px solid #c9d8e4;
+}
+
+.calendar_table .cal_left_border {
+    border-left: 1px solid #c9d8e4;
+}
+
+/*2 TOP-ROW: MONTH-PICKER*/
+.calendar_table .table_header {
+    text-align: center;
+    cursor: default;
+}
+
+.calendar_table .table_header td {  /*OK*/
+    font-size: 14px;
+    vertical-align:middle;
+    background-color: #4e9cde;
+	font-weight: bold;
+}
+
+#month-picker-table {
+	width:350px;
+}
+
+#month-picker-place-holder {
+    padding-right: 0px;
+    font-size: 18px; /*CHEVRON ICON SIZE*/
+}
+
+#month-picker-text{
+    width: 240px;
+    text-align: center;
+    font-size: 23px;
+    cursor: default;
+}
+
+.month-picker-left,.month-picker-right {
+    text-align: center;
+}
+
+.hidden-button span.glyphicon-chevron-right,
+.hidden-button span.glyphicon-chevron-left {
+	cursor: pointer;
+}
+
+#month-picker-left-glyphicon.calendar-disabled-button,
+#calander_monthly-report.calendar-disabled-button {
+    color: #dddddd;
+    cursor: default;
+}
+
+.hidden-button,
+.hidden-button2 {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: none !important;
+    outline:none;
+    cursor: default;
+}
+
+#month-picker-text button {
+	font-size: 18px;
+	float: left;
+}
+
+/*2.1 MONTHLY-REPORT*/
+#calander_monthly-report {
+	cursor: pointer;
+}
+
+#calander_monthly-report span {
+	color: #999999;
+	font-size: 14px; 
+	position: relative; 
+	top:5px;
+	left:29px;
+}
+
+.m-green-color { /*GREEN LABLE*/
+    color: #bfea95;
+}
+.m-yellow-color { /*YELLOW LABLE*/
+    color: #f0ad4e;
+}
+.m-red-color { /*RED LABLE*/
+    color: #ee5d59;
+}
+.m-gray-color { /*GRAY LABLE*/
+    color: #999999;
+}
+
+/*3 CONTENT: CELL COLOR*/
+.calendar_table .outer { /*NON MONTHS DATES*/
+    background-color: #e9f1f4;
+}
+
+.inner, .calenar-disabled {
+	vertical-align:text-top;
+    padding: 2px;
+}
+.calenar-disabled { /*UNACTIVE IN-MONTH DATES*/
+    background-color: #dfeada;
+}
+
+.unclickable-color { /*ACTIVE BUT NOT CLICKABLE DATES*/
+    background-color: #cdf8ff;
+    cursor: defualt;
+}
+
+.default-color { /*ONLY ACTIVE DATES*/
+    background-color: #cdf8ff;
+    cursor: pointer;
+}
+.default-color:hover {
+	background-color: #b5f4fe;
+}
+
+.green-color { /*GREEN LABLE*/
+    background-color: #bfea95;
+	cursor: pointer;
+}
+.green-color:hover { 
+    background-color: #aee874;
+}
+
+.yellow-color { /*YELLOW LABLE*/
+    background-color: #f0ad4e;
+	cursor: pointer;
+}
+.yellow-color:hover {
+    background-color: #eea43c;
+	cursor: pointer;
+}
+
+.red-color { /*RED LABLE*/
+    background-color: #ee5d59;
+	cursor: pointer;
+}
+.red-color:hover {
+    background-color: #ec4e49;
+	cursor: pointer;
+}
+
+.gray-color { /*GRAY LABLE*/
+    background-color: #999999;
+	cursor: pointer;
+}
+.gray-color:hover {
+    background-color: #848282;
+	cursor: pointer;
+}
+
+/*3.1 CONTENT: CELL SIZE*/
+.calendar_table td {
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+/*4.0 MODALS*/
+/*4.1 ADD HOURLY-REPORT MODAL*/
+.hourly-number-input {
+	width: 60px;
+}
+
+.td-hours-form {
+    width: 100px;
+}
+
+#tr_start-hour {
+	height: 42px;
+}
+
+#tr_start-hour, #tr_end-hour {
+	
+}
+
+#div_details {
+	margin-top: 8px; 
+	margin-bottom: 3px;
+}
+
+#error_msg_add-hourly-report {
+	color: #d9534f;
+	font-weight: bold;
+	padding-top: 5px;
+}
+.modal-body {
+    width: 300px;
+    margin: auto;
+}
+
+/*5. HOUR REPORT EDIT BOX*/
+.row-popover {
+	cursor: pointer;
+}
+
+.scrollable {
+    min-height: 200px;
+    max-height: 300px;
+    padding: 20px;
+    width:100%;
+
+    overflow:scroll;
+    overflow-x:hidden;
+
+    margin: 0 auto;
+    position: relative;
+}
+
+.div-status, .div-time, .div-date {
+    text-align:center;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.div-time {
+    line-height: 30px;
+}
+
+.row-details td {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-asat-add-edit{
+    width: 630px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.td-asat-add-btn {
+    float: left;
+}
+
+.td-date {
+    min-width: 150px;
+}
+
+.td-time {
+    min-width: 180px;
+}
+
+.td-details {
+    min-width: 250px;
+}
+
+.td-status {
+    min-width: 90px;
+}
